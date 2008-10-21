@@ -11,6 +11,8 @@
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		2361D2E00EAE4D6600C31A98 /* DataFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2361D2DF0EAE4D6600C31A98 /* DataFormatter.m */; };
+		2361D2E10EAE4D6600C31A98 /* DataFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2361D2DF0EAE4D6600C31A98 /* DataFormatter.m */; };
 		23829E0C0EA393700070F0BF /* EditDogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23829E0B0EA393700070F0BF /* EditDogViewController.m */; };
 		23829E0E0EA393DA0070F0BF /* EditDogViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23829E0D0EA393DA0070F0BF /* EditDogViewController.xib */; };
 		23829F010EA39B3B0070F0BF /* ViewDogController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23829F000EA39B3B0070F0BF /* ViewDogController.m */; };
@@ -76,6 +78,8 @@
 		1D3623250D0F684500981E51 /* active_resourceAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = active_resourceAppDelegate.m; sourceTree = "<group>"; };
 		1D6058910D05DD3D006BFB54 /* active_resource.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = active_resource.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2361D2DE0EAE4D6600C31A98 /* DataFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataFormatter.h; path = lib/DataFormatter.h; sourceTree = "<group>"; };
+		2361D2DF0EAE4D6600C31A98 /* DataFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataFormatter.m; path = lib/DataFormatter.m; sourceTree = "<group>"; };
 		23829E0A0EA393700070F0BF /* EditDogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditDogViewController.h; sourceTree = "<group>"; };
 		23829E0B0EA393700070F0BF /* EditDogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditDogViewController.m; sourceTree = "<group>"; };
 		23829E0D0EA393DA0070F0BF /* EditDogViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditDogViewController.xib; sourceTree = "<group>"; };
@@ -325,6 +329,8 @@
 		357A914B0E9A436E0025D9AF /* XML */ = {
 			isa = PBXGroup;
 			children = (
+				2361D2DE0EAE4D6600C31A98 /* DataFormatter.h */,
+				2361D2DF0EAE4D6600C31A98 /* DataFormatter.m */,
 				357A91580E9A436E0025D9AF /* Delegates */,
 				357A91B10E9A55EF0025D9AF /* XMLSerializable.h */,
 				357A91B20E9A55EF0025D9AF /* XMLSerializableSupport.h */,
@@ -497,6 +503,7 @@
 				23829E0C0EA393700070F0BF /* EditDogViewController.m in Sources */,
 				23829F010EA39B3B0070F0BF /* ViewDogController.m in Sources */,
 				3506000D0EA7FCCA0085CBDF /* NSData+Additions.m in Sources */,
+				2361D2E00EAE4D6600C31A98 /* DataFormatter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -532,6 +539,7 @@
 				239D50010EA690E600318802 /* GTMIPhoneUnitTestDelegate.m in Sources */,
 				239D50020EA690E600318802 /* GTMIPhoneUnitTestMain.m in Sources */,
 				239D50DA0EA6921800318802 /* DogTest.m in Sources */,
+				2361D2E10EAE4D6600C31A98 /* DataFormatter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

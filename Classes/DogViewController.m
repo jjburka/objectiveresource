@@ -10,6 +10,7 @@
 #import "Dog.h"
 #import "AddDogViewController.h"
 #import "ViewDogController.h"
+#import "DataFormatter.h"
 
 @interface DogViewController (Private)
 
@@ -34,6 +35,17 @@
 #pragma mark UIViewController methods
 
 - (void)viewDidLoad {
+	
+	NSDateFormatter * aFormatter = [[NSDateFormatter alloc] init];
+	[aFormatter setFormatterBehavior:NSDateFormatterBehavior10_4];
+	[aFormatter setDateFormat:@"yyyy-MM-dd'T'HH:mm:ss'Z'"];
+	[aFormatter setTimeZone:[NSTimeZone timeZoneWithAbbreviation:@"GMT"]];
+	
+	[[DataFormatter sharedManager] setDataFormatter:aFormatter	forType:@"NSDate"];
+	
+	[aFormatter release];
+	
+	
 	self.addController = [[[AddDogViewController alloc] initWithNibName:@"AddDogView" bundle:nil] autorelease];
   self.navigationItem.leftBarButtonItem = self.editButtonItem;
 }

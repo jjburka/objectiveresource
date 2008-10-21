@@ -80,7 +80,7 @@ static DataFormatter * sharedDataFormatter = nil;
 
 -(void) setDataFormatter:(NSFormatter *)aFormatter forType:(NSString *)aType {
 	
-	[dateFormatters setObject:[aFormatter] forKey:aType];
+	[dateFormatters setObject:[ aFormatter copy] forKey:aType];
 }
 
 -(NSFormatter *)getDataFormatterForType:(NSString *)aType {
